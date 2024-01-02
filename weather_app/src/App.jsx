@@ -12,7 +12,7 @@ function App() {
   const [weatherData, setWeatherData]= useState(null);
   const getResponse = async () =>{
     try{
-    // const response = await fetch(`http://api.weatherbit.io/v2.0/current?city=${city}&key=58099510b3724a8c876f4f1fbe97c669`);
+    const response = await fetch(`http://api.weatherbit.io/v2.0/current?city=${city}&key=58099510b3724a8c876f4f1fbe97c669`);
     setWeatherData(await response.json());
   }
   catch(error){ 
